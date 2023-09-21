@@ -1,0 +1,99 @@
+/* Sidebar styles */
+.sidebar {
+  height: 100%;
+  width: 250px; /* Initial width of the sidebar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #343a40; /* Set a constant background color */
+  overflow-x: hidden;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  padding-top: 20px;
+}
+
+/* Sidebar collapsed state */
+.sidebar.collapsed {
+  width: 60px; /* Adjust the width as needed */
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+/* Sidebar header styles */
+.sidebar-header {
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+}
+
+/* Navigation links styles */
+.list-unstyled.components {
+  padding: 30px 10px ;
+  list-style-type: none;
+}
+
+.list-unstyled.components p {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+
+.list-unstyled.components li {
+  padding: 10px 0;
+}
+
+.list-unstyled.components a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  height: 20px;
+}
+
+.list-unstyled.components a:hover {
+  background-color: #007bff;
+  border-radius: 8px;
+  color: #000000;
+  /* Change the background color on hover */
+}
+
+/* Toggle button styles */
+.corner-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+
+
+
+.responsive-button {
+  /* Set the initial background color */
+  /* background-image: radial-gradient(circle, #007bff, transparent); Radial gradient for button background */
+  /* background-size: 200%; Adjust the size of the gradient */
+  /* background-position: center; Center the gradient */
+  /* color: white; Button text color */
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 50%; /* Circular button */
+  transition:  0.3s ease, border-radius 0.3s ease; /* Add transitions for background color and border-radius */
+}
+
+/* Hover effect on the button */
+.responsive-button:hover {
+  /* background-image: radial-gradient(circle, #0056b3, transparent); Change the radial gradient color on hover */
+  border-radius: 100%; /* Make the button fully circular on hover */
+}
+
+/* ... (previous styles) */
+
+/* Toggle button styles for collapsed state */
+.responsive-button.closed {
+  /* Set the initial background color for the collapsed state */
+  /* background-image: radial-gradient(circle, #007bff, transparent); */
+  color: black; /* Button text color */
+  margin: -5px;
+}
